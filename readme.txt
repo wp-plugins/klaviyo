@@ -4,7 +4,7 @@ Donate link: http://www.klaviyo.com
 Tags: support, help, guide, tutorial, klaviyo
 Requires at least: 2.5
 Tested up to: 2.5
-Stable tag: 1.0
+Stable tag: 1.1
 
 Allows you to easily add the necessary JavaScript code to enable Klaviyo's learnlets.
 
