@@ -50,3 +50,6 @@ The Klaviyo code is added to the <head> section of your theme by default. It sho
 == Changelog == 
 = 1.0 =
 * Initial version
+
+= 1.1 =
+* Adding in automatic tracking of users if they log in or post a comment.
