@@ -154,20 +154,16 @@ function get_klaviyo_connect_identify() {
     global $current_user;
     get_currentuserinfo();
     if ($current_user->user_email) {
-        // echo "_learnq.push([\"identify\", {\n";
-        // echo "\"email\" : \"".$current_user->user_email."\",\n";
-        // echo "\"name\" : \"".$current_user->user_login."\",\n";
-        // echo "\"__id\" : \"".md5($current_user->user_email)."\"\n";
-        // echo "}]);\n";
+        echo "_learnq.push([\"identify\", {\n";
+        echo "\"$email\" : \"".$current_user->user_email."\",\n";
+        echo "}]);\n";
     } else {
         // See if current user is a commenter
         $commenter = wp_get_current_commenter();
         if ($commenter['comment_author_email']) {
-            // echo "_learnq.push([\"identify\", {\n";
-            // echo "\"email\" : \"".$commenter['comment_author_email']."\",\n";
-            // echo "\"name\" : \"".$commenter['comment_author']."\",\n";
-            // echo "\"__id\" : \"".md5($commenter['comment_author_email'])."\"\n";
-            // echo "}]);\n";
+            echo "_learnq.push([\"identify\", {\n";
+            echo "\"$email\" : \"".$commenter['comment_author_email']."\",\n";
+            echo "}]);\n";
         }
     } 
 }
@@ -187,11 +183,11 @@ function add_klaviyo_connect() {
         echo "var _learnq = _learnq || [];\n";
         
         if ( '' != $klaviyo_id ) {
-            // echo "_learnq.push([\"account\", \"".$klaviyo_id."\"]);\n";
+            echo "_learnq.push([\"account\", \"".$klaviyo_id."\"]);\n";
         }
         
         // Optional
-        // get_klaviyo_connect_identify();
+        get_klaviyo_connect_identify();
 
         echo "(function() {\n";
         echo "   var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;\n";
