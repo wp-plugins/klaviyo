@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Klaviyo
- * Version: 1.1
+ * Version: 1.1.1
  * Plugin URI: http://wordpress.org/extend/plugins/klaviyo-wordpress/
  * Description: Adds the necessary JavaScript code to use <a href="http://www.klaviyo.com/?src=klaviyo-wordpress">Klaviyo</a>. After enabling this plugin visit <a href="options-general.php?page=klaviyo.php">the options page</a> and enter your Klaviyo ID and enable learnlets.
  * Author: Andrew Bialecki

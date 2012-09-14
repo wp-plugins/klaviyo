@@ -4,7 +4,7 @@ Donate link: http://www.klaviyo.com
 Tags: support, help, guide, tutorial, klaviyo
 Requires at least: 2.5
 Tested up to: 2.5
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 Allows you to easily add the necessary JavaScript code to enable Klaviyo's learnlets.
 
@@ -38,9 +38,9 @@ Once you save your settings the JavaScript code should now be appearing on all o
 
 == Frequently Asked Questions ==
 
-=Where is the Klaviyo code added?=
+= Where is the Klaviyo code added? =
 
-The Klaviyo code is added to the <head> section of your theme by default. It should be somewhere near the bottom of that section.
+The Klaviyo code is added to the &lt;head&gt; section of your theme by default. It should be somewhere near the bottom of that section.
 
 == Screenshots ==
 
@@ -53,3 +53,6 @@ The Klaviyo code is added to the <head> section of your theme by default. It sho
 
 = 1.1 =
 * Adding in automatic tracking of users if they log in or post a comment.
+
+= 1.1.1 =
+* Fixing documentation a bit and one bug fix.
