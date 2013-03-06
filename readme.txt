@@ -1,22 +1,22 @@
 === Klaviyo ===
 Contributors: bialecki
 Donate link: http://www.klaviyo.com
-Tags: support, help, guide, tutorial, klaviyo
+Tags: analytics, marketing, klaviyo
 Requires at least: 2.5
 Tested up to: 2.5
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 
-Allows you to easily add the necessary JavaScript code to enable Klaviyo's learnlets.
+Allows you to easily add the necessary JavaScript code to enable Klaviyo's analytics.
 
 == Description ==
 
-Klaviyo adds the necessary JavaScript code to enable our learnlets on any WordPress blog. This eliminates the need to edit your template code to enable Klaviyo.
+Klaviyo adds the necessary JavaScript code to enable our analytics on any WordPress blog. This eliminates the need to edit your template code to enable Klaviyo.
 
 **Features**
 
 Klaviyo has the following features:
 
-- Inserts our code on all pages WordPress manages, allowing you guide users through any part of your blog.
+- Inserts our code on all pages WordPress manages, allowing you track users on any part of your blog.
 - Easy install: only need to know your Klaviyo ID.
 - Can include tracking code in the footer, speeding up load times.
 - Complete control over options; disable any feature if needed.
@@ -25,7 +25,7 @@ Klaviyo has the following features:
 
 In your WordPress administration page go to Options > Klaviyo. From there enter your Klaviyo ID and enable Klaviyo. Information on how to obtain your Klaviyo ID can be found on the options page.
 
-Once you save your settings the JavaScript code should now be appearing on all of your WordPress pages.
+Once you save your settings the JavaScript code should be included on all of your WordPress pages.
 
 
 
@@ -56,3 +56,6 @@ The Klaviyo code is added to the &lt;head&gt; section of your theme by default. 
 
 = 1.1.1 =
 * Fixing documentation a bit and one bug fix.
+
+= 1.1.2 =
+* Updating docs.
