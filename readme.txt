@@ -1,32 +1,30 @@
 === Klaviyo ===
 Contributors: bialecki
-Donate link: http://www.klaviyo.com
-Tags: analytics, marketing, klaviyo
-Requires at least: 2.5
-Tested up to: 2.5
-Stable tag: 1.1.2
+Donate link: https://www.klaviyo.com
+Tags: analytics, email, marketing, klaviyo
+Requires at least: 3.0
+Tested up to: 3.8.1
+Stable tag: 1.2.0
 
-Allows you to easily add the necessary JavaScript code to enable Klaviyo's analytics.
+Easily intergrate Klaviyo with your Wordpress site.
+
 
 == Description ==
 
-Klaviyo adds the necessary JavaScript code to enable our analytics on any WordPress blog. This eliminates the need to edit your template code to enable Klaviyo.
+By adding the Klaviyo plugin, you'll enable Klaviyo analytics and be able to easily add an email sign up widget to your site. This eliminates the need to edit your Wordpress template to integrate Klaviyo.
 
 **Features**
 
 Klaviyo has the following features:
 
-- Inserts our code on all pages WordPress manages, allowing you track users on any part of your blog.
-- Easy install: only need to know your Klaviyo ID.
-- Can include tracking code in the footer, speeding up load times.
-- Complete control over options; disable any feature if needed.
+- Inserts our analytics on all pages WordPress manages, allowing you track users on any part of your website.
+- Embed a customized email sign up, customizing the title, description and button text.
 
 **Usage**
 
-In your WordPress administration page go to Options > Klaviyo. From there enter your Klaviyo ID and enable Klaviyo. Information on how to obtain your Klaviyo ID can be found on the options page.
+In the WordPress admin, look for the Klaviyo link in the sidebar. From there enter your Klaviyo API key. Information on how to find your Klaviyo API key is on plugin settings page. Once you add your API key, analytics will be enabled for your site.
 
-Once you save your settings the JavaScript code should be included on all of your WordPress pages.
-
+To add an embedded sign up, select the Klaviyo email sign up widget from the Appearance > Widgets section.
 
 
 == Installation ==
@@ -40,7 +38,7 @@ Once you save your settings the JavaScript code should be included on all of you
 
 = Where is the Klaviyo code added? =
 
-The Klaviyo code is added to the &lt;head&gt; section of your theme by default. It should be somewhere near the bottom of that section.
+Our analytics code is added to the &lt;head&gt; section of your theme by default. It should be somewhere near the bottom of that section.
 
 == Screenshots ==
 
@@ -59,3 +57,6 @@ The Klaviyo code is added to the &lt;head&gt; section of your theme by default. 
 
 = 1.1.2 =
 * Updating docs.
+
+= 1.2.0 =
+* Updating to allow embedding an email sign up form.
