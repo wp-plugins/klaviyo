@@ -32,7 +32,7 @@ class Klaviyo_EmailSignUp_Widget extends WP_Widget {
             echo $before_title . $title . $after_title; 
         }
 
-        echo '<form id="kla_embed_' . $this->id . '" class="klaviyo_default_styling" action="http://manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="http://manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">' . "\n";
+        echo '<form id="kla_embed_' . $this->id . '" class="klaviyo_wp_styling" action="http://manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="http://manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">' . "\n";
         echo '  <input type="hidden" name="g" value="' . $list_id . '">' . "\n";
 
         if ($description) {
@@ -41,7 +41,7 @@ class Klaviyo_EmailSignUp_Widget extends WP_Widget {
 
         echo '  <div class="klaviyo_field_group">' . "\n";
         echo '    <label for="kla_email_' . $this->id . '" style="display:none;">' . $title .'</label>' . "\n";
-        echo '    <input type="email" value="" name="email" id="kla_email_' . $this->id . '" placeholder="Your email" />' . "\n";
+        echo '    <input type="text" value="" name="email" id="kla_email_' . $this->id . '" placeholder="Your email" />' . "\n";
         echo '  </div>' . "\n";
         echo '  <div class="klaviyo_messages">' . "\n";
         echo '    <div class="success_message" style="display:none;"></div>' . "\n";
