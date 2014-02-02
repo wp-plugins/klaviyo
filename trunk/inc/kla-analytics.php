@@ -17,10 +17,10 @@ class WPKlaviyoAnalytics {
         }
 
         echo "\n" . '<!-- Start Klaviyo // Plugin Version: ' . KLAVIYO_PLUGIN_VERSION .' -->' . "\n";
-        echo '<script type=\"text/javascript\">' . "\n";
+        echo '<script type="text/javascript">' . "\n";
         echo 'var _learnq = _learnq || [];' . "\n";
 
-        echo "_learnq.push([\"account\", \"" . $klaviyo_settings['public_api_key'] . "\"]);\n";
+        echo '_learnq.push(["account", "' . $klaviyo_settings['public_api_key'] . '"]);' . "\n";
 
         if ($current_user->user_email) {
             echo '_learnq.push(["identify", {' . "\n";
@@ -38,7 +38,7 @@ class WPKlaviyoAnalytics {
 
         echo '(function() {' . "\n";
         echo '   var pa = document.createElement("script"); pa.type = "text/javascript"; pa.async = true;' . "\n";
-        echo '   pa.src = "//a.local-klaviyo.com/media/js/analytics/analytics.js";' . "\n";
+        echo '   pa.src = "//a.klaviyo.com/media/js/analytics/analytics.js";' . "\n";
         echo '   var s = document.getElementsByTagName("script")[0];' . "\n";
         echo '   s.parentNode.insertBefore(pa, s);' . "\n";
         echo '})();' . "\n";
